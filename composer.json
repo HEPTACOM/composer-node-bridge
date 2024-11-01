@@ -1,0 +1,21 @@
+{
+    "name": "heptacom/composer-node-bridge",
+    "type": "composer-plugin",
+    "require": {
+        "composer-plugin-api": "^2.0",
+        "symfony/process": "^5 || ^6 || ^7",
+        "symfony/filesystem": "^5 || ^6 || ^7"
+    },
+    "require-dev": {
+        "composer/composer": "^2.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Heptacom\\ComposerNodeBridge\\": "src/"
+        }
+    },
+    "extra": {
+        "class": "Heptacom\\ComposerNodeBridge\\ComposerNodeBridgePlugin"
+    }
+}
