@@ -56,7 +56,7 @@ final class ComposerNodeBridgePlugin implements PluginInterface, EventSubscriber
         $installationProcess->run();
 
         $detectionProcess = Process::fromShellCommandline(
-            'source $NVM_DIR/nvm.sh && nvm which ' . self::NODE_VERSION,
+            '. $NVM_DIR/nvm.sh && nvm which ' . self::NODE_VERSION,
             null,
             ['NVM_DIR' => self::DIR_VAR]
         );
